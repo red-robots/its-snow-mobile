@@ -1,28 +1,38 @@
-.sticky {
-	display: block;
-}
+.template-index {
+    overflow: hidden;
+    >.row-1 {
+        .background-image {
 
-.hentry {
-	margin: 0 0 1.5em;
-}
+        }
+        .triangle-1 {
 
-.byline,
-.updated:not(.published){
-	display: none;
-}
+        }
+        .triangle-2 {
+        
+        }
+        .title {
+            h1 {
 
-.single .byline,
-.group-blog .byline {
-	display: inline;
-}
+            }
+        }
+        .date {
 
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
-}
+        }
+        .location-1 {
 
-.page-links {
-	clear: both;
-	margin: 0 0 1.5em;
+        }
+        .location-2 {
+
+        }
+    }
+    >.row-2 {
+        .background-image {
+
+        }
+    }
+    >.row-3 {
+        .background-image {
+
+        }
+    }
 }
