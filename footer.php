@@ -14,13 +14,20 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="wrapper">
-			<div class="site-info">
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'acstarter' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'acstarter' ), 'WordPress' ); ?></a>
-				<span class="sep"> | </span>
-				<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'acstarter' ), 'acstarter', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-			</div><!-- .site-info -->
-	</div><!-- wrapper -->
+		<?php $phone_number = get_field("phone_number","option");
+		$phone_text = get_field("phone_text","option");
+		$email = get_field("email","option");
+		$email_text = get_field("email_text","option");
+		if($phone_number):?>
+			<div class="phone">
+				<?php if($phone_text) echo $phone_text.'&nbsp;';?><a href="tel:+1<?php echo preg_replace("[^0-9]","",$phone_number);?>"><?php echo $phone_number;?></a>
+			</div><!--.phone-->
+		<?php endif;
+		if($phone_number):?>
+			<div class="email">
+				<?php if($email_text) echo $email_text.'&nbsp;';?><a href="mailto:<?php echo $email;?>"><?php echo $email;?></a>
+			</div><!--.phone-->
+		<?php endif;?>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
