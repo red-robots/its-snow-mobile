@@ -1440,7 +1440,8 @@ html[xmlns] .flexslider .slides{display:block}
 }@media screen and (min-width:1200px){.template-index>.row-3.copy h2,.template-index>.row-4.copy h2{font-size:75px}
 }.template-index>.row-3.copy h3,.template-index>.row-4.copy h3{margin:0;color:#000c43;font-size:25px;margin:5px 0 0 0}
 .template-index>.row-3.copy p,.template-index>.row-4.copy p{margin:5px 0 0 0}
-@media screen and (min-width:600px){.template-index>.row-4.copy{padding:2% 15% 5% 5%}
+@media screen and (min-width:600px){.template-index>.row-4.copy{padding:2% 5% 5% 5%}
+}@media screen and (min-width:1200px){.template-index>.row-4.copy{padding:2% 15% 5% 5%}
 }.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
