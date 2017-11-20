@@ -42,7 +42,7 @@
         .triangle-2 {
             position: absolute;
             z-index: -1;
-            bottom: 47.6%;
+            bottom: 47.7%;
             right: 0;
             width: 40%;
             display: none;
@@ -110,7 +110,7 @@
         line-height: 1;
         font-size: 18px;
         @media screen and (min-width: $tabwidth){
-            padding: 2% 5% 5% 45%;
+            padding: 2% 5% 5% 40%;
         }
         @media screen and (min-width: $midwidth){
             font-size: 25px;
@@ -158,14 +158,14 @@
             display: block;
         }
     }
-    >.row-3.copy {
+    >.row-3.copy, >.row-4.copy {
         padding: 20px;
         position: relative;
         color: $color__i-blue;
         font-size: 18px;
         line-height: 1;
         @media screen and (min-width: $tabwidth){
-            padding: 2% 55% 5% 5%;
+            padding: 2% 45% 5% 5%;
         }
         @media screen and (min-width: $midwidth){
             font-size: 25px;
@@ -200,8 +200,20 @@
                 font-size: 75px;
             }   
         }
+        h3 {
+            margin: 0;
+            color: $color__i-blue;
+            font-size: 25px;
+            margin: 5px 0 0 0;
+        }
         p {
             margin: 5px 0 0 0;
         }
+    }
+    >.row-4.copy {
+        @media screen and (min-width: $tabwidth){
+            padding: 2% 15% 5% 5%;
+        }
+
     }
 }

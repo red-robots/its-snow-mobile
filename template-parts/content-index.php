@@ -38,6 +38,7 @@
     </div><!--.row-1-->
     <?php $row_2_copy = get_field("row_2_copy");
     $row_3_copy = get_field("row_3_copy");
+    $row_4_copy = get_field("row_4_copy");
     if($row_2_copy):?>
         <div class="row-2 copy">
             <div class="background-image">
@@ -55,6 +56,11 @@
                 <img src="<?php echo get_template_directory_uri();?>/images/mid-2.png" alt="mid 2">               
             </div><!--.background-image-->
             <?php echo $row_3_copy;?>
+        </div><!--.row-3-->
+    <?php endif;?>
+    <?php if($row_4_copy):?>
+        <div class="row-4 copy">
+            <?php echo $row_4_copy;?>
         </div><!--.row-3-->
     <?php endif;?>
 </article><!-- #post-## -->
